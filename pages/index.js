@@ -45,7 +45,7 @@ export default function Home({ advice }) {
         <meta name="twitter:card" content="summary" />
         <meta
           property="og:description"
-          content="Hurray!! Yes Social Media Preview is Working"
+          content="Get life-changing advice on every click!"
         />
         <meta property="og:image" content={'preview.png'} />
       </Head>
