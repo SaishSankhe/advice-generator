@@ -47,6 +47,10 @@ export default function Home({ advice }) {
           property="og:description"
           content="Get life-changing advice on every click!"
         />
+        <meta
+          property="og:image:alt"
+          content="Advice generator on each click!"
+        />
         <meta property="og:image" content={'preview.png'} />
       </Head>
       <main>
