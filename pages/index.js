@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import Footer from '@/components/Footer';
+import Head from 'next/head';
 
 export async function getServerSideProps(context) {
   const apiURL = 'https://api.adviceslip.com/advice';
@@ -33,6 +34,21 @@ export default function Home({ advice }) {
 
   return (
     <>
+      <Head>
+        <title>Advice Generator</title>
+        <meta
+          property="og:url"
+          content="https://advice-generator-saish.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Advice Generator" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:description"
+          content="Hurray!! Yes Social Media Preview is Working"
+        />
+        <meta property="og:image" content={'preview.png'} />
+      </Head>
       <main>
         <div className="card">
           <h1>ADVICE #{advice.slip.id}</h1>
