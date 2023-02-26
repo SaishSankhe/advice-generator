@@ -3,9 +3,10 @@ $green: hsl(150, 100%, 66%);
 $grayish-blue: hsl(217, 19%, 38%);
 $dark-grayish-blue: hsl(217, 19%, 24%);
 $dark-blue: hsl(218, 23%, 16%);
+$gray: #848d9b;
 
 body {
-  margin: 16px;
+  margin: 12px;
   font-family: 'Manrope', sans-serif;
   background-color: $dark-blue;
 }
@@ -15,7 +16,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 96vh;
+  min-height: 95vh;
 }
 
 .card {
@@ -64,5 +65,35 @@ main {
     border-radius: 50px;
     background-color: $green;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    img {
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      box-shadow: $green 0px 0px 30px 0px;
+      img {
+        transform: rotate(45deg);
+      }
+    }
+
+    &:active {
+      box-shadow: $green 0px 0px 16px 0px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  color: $gray;
+  font-size: 0.6rem;
+
+  a {
+    color: $gray;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      color: $green;
+    }
   }
 }
