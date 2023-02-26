@@ -39,13 +39,19 @@ export default function Home({ advice }) {
           {isRefreshing ? (
             <p className="loading">Loading...</p>
           ) : (
-            <p className="advice"> “{advice.slip.advice} ”</p>
+            <p className="advice"> “{advice.slip.advice}”</p>
           )}
-          <img
-            className="divider"
-            alt="divider"
-            src="pattern-divider-desktop.svg"
-          />
+          <picture>
+            <source
+              media="(max-width: 1200px)"
+              srcset="pattern-divider-mobile.svg"
+            />
+            <img
+              className="divider"
+              alt="divider image"
+              src="pattern-divider-desktop.svg"
+            />
+          </picture>
           <button className="dice-btn" onClick={() => refreshData()}>
             <img src="icon-dice.svg" alt="dice icon" />
           </button>

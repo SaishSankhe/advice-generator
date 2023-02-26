@@ -6,7 +6,7 @@ $dark-blue: hsl(218, 23%, 16%);
 $gray: #848d9b;
 
 body {
-  margin: 12px;
+  margin: 8px 16px;
   font-family: 'Manrope', sans-serif;
   background-color: $dark-blue;
 }
@@ -16,7 +16,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 95vh;
+  min-height: 96vh;
 }
 
 .card {
@@ -94,6 +94,28 @@ footer {
 
     &:hover {
       color: $green;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: auto;
+    padding: 16px 8px;
+
+    h1 {
+      font-size: 0.68rem;
+      margin-top: 24px;
+    }
+
+    .advice {
+      font-size: 1.5rem;
+      margin: 24px 16px 0;
+      line-height: 2rem;
+    }
+
+    .divider {
+      margin: 24px 0 40px;
     }
   }
 }
