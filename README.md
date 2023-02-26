@@ -1,38 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Advice generator app
 
-## Getting Started
+This is my solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Build out a advice generator app using the [Advice Slip API](https://api.adviceslip.com/).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### The challenge
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Users should be able to:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Generate a new piece of advice by clicking the dice icon
 
-## Learn More
+### Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+<img src="./public/desktop-screenshot.png" alt="Advice generator" title="Desktop version" width="100%">
+<p align="center">
+  <img src="./public/mobile-screenshot.png" alt="Advice generator" title="Mobile version" width="60%">
+</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Links
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Solution URL: [GitHub](https://github.com/SaishSankhe/advice-generator)
+- Live Site URL: [Vercel](https://advice-generator-saishsankhe.vercel.app/)
 
-## Deploy on Vercel
+## My process
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Built with
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/) - React framework
+- Semantic HTML5 markup
+- [SCSS](https://sass-lang.com/) - CSS
+- Flexbox
+
+### What I learned
+
+This is the first time I have used Next.js for a project. It was great fun to learn something new and implement the challenge. I got to learn different ways of content rendering like Server-Side Rendering and Static Site Generation. I also learned how to create a link preview for social media link sharing and now this website has a working link preview as well.
+
+### Continued development
+
+I am planning to add a sharing option where a user can click on share and the image of current advice will be available for sharing.
