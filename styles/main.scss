@@ -1,0 +1,68 @@
+$cyan: hsl(193, 38%, 86%);
+$green: hsl(150, 100%, 66%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+body {
+  margin: 16px;
+  font-family: 'Manrope', sans-serif;
+  background-color: $dark-blue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  padding: 40px;
+  border-radius: 16px;
+  background-color: $dark-grayish-blue;
+
+  h1 {
+    font-size: 0.8rem;
+    margin: 0;
+    letter-spacing: 0.3rem;
+    color: $green;
+  }
+
+  p {
+    margin: 0;
+    color: $cyan;
+  }
+
+  .advice {
+    text-align: center;
+    font-size: 1.65rem;
+    margin: 24px 0 12px;
+    line-height: 2.5rem;
+  }
+
+  .divider {
+    margin: 24px 0;
+  }
+
+  .dice-btn {
+    all: unset;
+    position: absolute;
+    bottom: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: $green;
+    cursor: pointer;
+  }
+}
