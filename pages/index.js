@@ -23,6 +23,7 @@ export async function getServerSideProps(context) {
 export default function Home({ advice }) {
   const [isRefreshing, setIsRefreshing] = useState(false);
   const router = useRouter();
+  const [isCopied, setIsCopied] = useState(false);
 
   const refreshData = () => {
     router.replace(router.asPath);
@@ -31,6 +32,27 @@ export default function Home({ advice }) {
   useEffect(() => {
     setIsRefreshing(false);
   }, [advice]);
+
+  async function copyTextToClipboard(text) {
+    if ('clipboard' in navigator) {
+      return await navigator.clipboard.writeText(text);
+    } else {
+      return document.execCommand('copy', true, text);
+    }
+  }
+
+  const handleCopyClick = () => {
+    copyTextToClipboard(advice.slip.advice)
+      .then(() => {
+        setIsCopied(true);
+        setTimeout(() => {
+          setIsCopied(false);
+        }, 2000);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <>
@@ -64,7 +86,7 @@ export default function Home({ advice }) {
           <picture>
             <source
               media="(max-width: 1200px)"
-              srcset="pattern-divider-mobile.svg"
+              srcSet="pattern-divider-mobile.svg"
             />
             <img
               className="divider"
@@ -76,7 +98,12 @@ export default function Home({ advice }) {
             <img src="icon-dice.svg" alt="dice icon" />
           </button>
         </div>
+        <button className="copy-btn" onClick={handleCopyClick}>
+          <img src="copy.png" alt="Copy icon" width={24} height={24} />
+          {isCopied ? 'Copied!' : 'Copy advice'}
+        </button>
       </main>
+
       <Footer />
     </>
   );
