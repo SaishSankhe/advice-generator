@@ -25,7 +25,9 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-I have also added the capability to copy the advice to clipboard.
+My additions:
+
+- Added the capability to copy the advice to clipboard.
 
 ### Screenshots
 
