@@ -47,6 +47,7 @@ I have also added the capability to copy the advice to clipboard.
 - Semantic HTML5 markup
 - [SCSS](https://sass-lang.com/) - CSS
 - Flexbox
+- [Advice Slip API](https://api.adviceslip.com/)
 
 ### What I learned
 
