@@ -1,8 +1,8 @@
 # Advice generator app
 
-This is my solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
+Get random, useful, sarcastic, and sometimes very serious advice using this application!
 
-### Try the [advice generator here](https://advice-generator-saishsankhe.vercel.app/).
+### Try out the [advice generator here](https://advice-generator-saishsankhe.vercel.app/).
 
 ## Table of contents
 
@@ -17,9 +17,11 @@ This is my solution to the [Advice generator app challenge on Frontend Mentor](h
 
 ## Overview
 
-Build out a advice generator app using the [Advice Slip API](https://api.adviceslip.com/).
+Build out an advice generator app using the [Advice Slip API](https://api.adviceslip.com/).
 
 ### The challenge
+
+This is my solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
 
 Users should be able to:
 
